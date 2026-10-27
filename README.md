@@ -21,3 +21,7 @@ Each book is in its own folder, and the pages are numbered in reading order (`00
 | `Obsługa i bieżące naprawy FSO WARSZAWA cz. 3 i 4a (PL, 1966) - Maintenance and running repairs FSO Warszawa parts 3-4a` | Obsługa i bieżące naprawy samochodu FSO WARSZAWA Część 3 i 4a | Maintenance and running repairs of the FSO Warszawa, parts 3 and 4a | Polish | 1966 | 79 |
 | `Obsługa i bieżące naprawy FSO WARSZAWA cz. 4b i 5 (PL, 1966) - Maintenance and running repairs FSO Warszawa parts 4b-5` | Obsługa i bieżące naprawy samochodu FSO WARSZAWA Część 4b i 5 | Maintenance and running repairs of the FSO Warszawa, parts 4b and 5 | Polish | 1966 | 168 |
 | `Katalog części zamiennych FSO WARSZAWA 223 (PL-EN-DE-FR, 1968) - Spare parts catalog FSO Warszawa 223` | Katalog części zamiennych FSO WARSZAWA 223 | FSO Warszawa 223 spare parts catalog | Polish / English / German / French | 1968 | 392 |
+
+## Knowledge base
+
+[`knowledge-base/`](knowledge-base/README.md) collects factory data and owner experience for the **FSO S-21 engine** and its **Polish Weber carburettor** (34S2B1 and related types). It includes a start-here guide for an engine that won't run after the carburettor was cleaned.
