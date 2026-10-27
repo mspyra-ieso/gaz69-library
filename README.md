@@ -14,3 +14,4 @@ Each book is in its own folder, and the pages are numbered in reading order (`00
 | `Tablice poglądowe GAZ 21 WOŁGA (RU, 1972) - Illustrated wall charts GAZ 21 Volga` | Tablice poglądowe GAZ 21 WOŁGA | GAZ 21 Volga illustrated wall charts | Russian | 1972 | 63 |
 | `Katalog części zamiennych GAZ 69 UAZ 450 (RU-EN-FR, 1964) - Spare parts catalog GAZ 69 UAZ 450` | Katalog części zamiennych GAZ 69 UAZ 450 | GAZ 69 / UAZ 450 spare parts catalog | Russian / English / French | 1964 | 289 |
 | `Elektryczne wyposażenie samochodów CCCP (RU, 1971) - Electrical equipment of USSR cars` | Elektryczne wyposażenie samochodów CCCP | Electrical equipment of USSR cars | Russian | 1971 | 115 |
+| `Rysunki techniczne silnika ZMZ-21 (RU, 1964) - Technical drawings of the ZMZ-21 engine` | Rysunki techniczne silnika ZMZ-21 (UAZ 450, UAZ 469, GAZ 21 WOŁGA) | Technical drawings of the ZMZ-21 engine (UAZ 450, UAZ 469, GAZ 21 Volga) | Russian | 1964 | 149 |
