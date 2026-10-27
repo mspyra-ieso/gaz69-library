@@ -1,4 +1,4 @@
-# GAZ-69 library
+# GAZ-69 and GAZ-21 library
 
 Scans from the free online library at [gaz69.eu](https://gaz69.eu/biblioteka/gaz-69/), kept here for personal reference.
 Each book is in its own folder, and the pages are numbered in reading order (`0001_…`, `0002_…`).
@@ -10,3 +10,7 @@ Each book is in its own folder, and the pages are numbered in reading order (`00
 | `Instrukcja obsługi i naprawy samochodów GAZ 69 UAZ 450 (PL, 1965) - Operation and repair manual GAZ 69 UAZ 450` | Instrukcja obsługi i naprawy samochodów GAZ 69 UAZ 450 | Operation and repair manual for the GAZ 69 and UAZ 450 | Polish | 1965 | 508 |
 | `Wojskowy remont samochodu GAZ 69 (RU, 1976) - Military repair of the GAZ 69` | Wojskowy remont samochodu GAZ 69 | Military repair of the GAZ 69 | Russian | 1976 | 487 |
 | `Techniczna obsługa samochodów GAZ 51 GAZ 63 GAZ 69 GAZ 69A (RU, 1975) - Technical maintenance GAZ 51 63 69 69A` | Techniczna obsługa samochodów GAZ 51 GAZ 63 GAZ 69 GAZ 69A | Technical maintenance of the GAZ 51, GAZ 63, GAZ 69 and GAZ 69A | Russian | 1975 | 160 |
+| `Instrukcja naprawy samochodu GAZ 21 WOŁGA (PL, 1963) - Repair manual GAZ 21 Volga` | Instrukcja naprawy samochodu GAZ 21 WOŁGA | GAZ 21 Volga repair manual | Polish | 1963 | 424 |
+| `Tablice poglądowe GAZ 21 WOŁGA (RU, 1972) - Illustrated wall charts GAZ 21 Volga` | Tablice poglądowe GAZ 21 WOŁGA | GAZ 21 Volga illustrated wall charts | Russian | 1972 | 63 |
+| `Katalog części zamiennych GAZ 69 UAZ 450 (RU-EN-FR, 1964) - Spare parts catalog GAZ 69 UAZ 450` | Katalog części zamiennych GAZ 69 UAZ 450 | GAZ 69 / UAZ 450 spare parts catalog | Russian / English / French | 1964 | 289 |
+| `Elektryczne wyposażenie samochodów CCCP (RU, 1971) - Electrical equipment of USSR cars` | Elektryczne wyposażenie samochodów CCCP | Electrical equipment of USSR cars | Russian | 1971 | 115 |
