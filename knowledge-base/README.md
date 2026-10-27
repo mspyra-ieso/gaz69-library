@@ -18,7 +18,7 @@ Owners almost never write the carburettor's model code; they just say "Weber" or
 Work top to bottom. Stop when the engine runs.
 
 1. **Identify the carburettor** (next section). Three of the commonest forum tips (solenoid, choke flap, 6.5 mm float) only apply to the later 28/35.
-2. **Rule out what the cleaning may have disturbed outside the carb.** This takes about 10 minutes:
+2. **Rule out what the cleaning may have disturbed outside the carb.** In owner reports, about **1 case in 7 blamed on the carb was really ignition or plugs**: brand-new plugs (ISKRA three times), new condensers, or HT leads. **Timing** is often lost after oil-pump or distributor work, because the oil pump drives the distributor. This takes about 10 minutes:
    - **Spark:** a strong blue spark jumping a few mm.
    - **Timing:** was the distributor or fuel pump moved? Firing order is 1-2-4-3.
    - **Fuel delivery:** disconnect the hose at the carb and crank. There should be strong pulses.
@@ -44,8 +44,9 @@ Work top to bottom. Stop when the engine runs.
    - See [weber-34s2b1/adjustment-procedures.md](weber-34s2b1/adjustment-procedures.md).
 6. **Floods?**
    - Screw the mixture screw fully in. If the engine still runs, fuel is getting past the float or needle.
+   - Fuel coming out of the **two small drain holes in the intake manifold** means the carb is overflowing. Don't block them.
    - See [weber-34s2b1/troubleshooting.md](weber-34s2b1/troubleshooting.md).
-7. **Still stuck?** Go through the symptom tables in [weber-34s2b1/troubleshooting.md](weber-34s2b1/troubleshooting.md) and [weber-34s2b1/forum-experiences.md](weber-34s2b1/forum-experiences.md). On the GAZ-69 swap, also check the crankcase breather valve linkage worked from the carb throttle spindle.
+7. **Still stuck?** Go through the symptom tables in [weber-34s2b1/troubleshooting.md](weber-34s2b1/troubleshooting.md), [weber-34s2b1/forum-experiences.md](weber-34s2b1/forum-experiences.md) and [weber-34s2b1/owner-reports.md](weber-34s2b1/owner-reports.md). For engine-side causes, see [s21-engine/owner-reports.md](s21-engine/owner-reports.md). For GAZ-69-specific swap issues, see [s21-engine/gaz69-s21-owner-reports.md](s21-engine/gaz69-s21-owner-reports.md), which ends with a swap checklist. On the GAZ-69 swap, also check the crankcase breather valve linkage worked from the carb throttle spindle.
 
 ## Identify your carburettor
 
@@ -74,7 +75,8 @@ Earlier on, we believed the 34S2B1 had a vacuum-opened secondary. The factory ma
 | Plug gap | 0.6–0.7 mm | Club manual extract |
 | Valve clearance, cold | Intake 0.20–0.22 / exhaust 0.25–0.30 mm | Club manual extract |
 | Static timing | 7° BTDC (5° in another source); TDC ball or hole on the flywheel, seen through the bellhousing window | Conflict; check the FSO manuals |
-| Head bolt torque, dwell, compression | **Not found online.** Check the FSO repair manuals in this repo | — |
+| Head bolt torque | **No factory S-21 figure found.** Owners use 120–130 Nm; the only published figure, 66–71 Nm, is for the M-20. **Check the FSO repair manual before using either.** | Conflict |
+| Dwell, compression | **Not found online.** Check the FSO repair manuals in this repo | — |
 
 ## Folder contents
 
@@ -86,6 +88,7 @@ Earlier on, we believed the 34S2B1 had a vacuum-opened secondary. The factory ma
 - [after-cleaning-checklist.md](weber-34s2b1/after-cleaning-checklist.md): a 19-step checklist for your exact situation.
 - [troubleshooting.md](weber-34s2b1/troubleshooting.md): by symptom, with a table of short Polish original quotes.
 - [forum-experiences.md](weber-34s2b1/forum-experiences.md): real symptom → fix cases, each with a link and a short Polish quote.
+- [owner-reports.md](weber-34s2b1/owner-reports.md): 27 more owner cases (Żuk, Nysa, Warszawa) from other threads and forums. Marked confirmed or suggested, with advice that contradicts factory data flagged, and ending in a "Patterns" ranking.
 - [rebuild-kits.md](weber-34s2b1/rebuild-kits.md): kits, sellers, prices. Best match found: ETER-MOT 34S2A1/34S2B1 kit, about 320 zł; ask the seller to confirm the type first.
 - [videos.md](weber-34s2b1/videos.md).
 - `images/`: factory manual pages (jet tables, float drawings, exploded views, fault table), gasket shapes, forum photos. `a-images.md` and `b-images.md` list the source of each image.
@@ -95,7 +98,9 @@ Earlier on, we believed the 34S2B1 had a vacuum-opened secondary. The factory ma
 - [specs-and-service-data.md](s21-engine/specs-and-service-data.md)
 - [diagnosis-guide.md](s21-engine/diagnosis-guide.md): no-start and rough-running order.
 - [common-problems.md](s21-engine/common-problems.md): overheating (corroded head water tube), points, timing gear, oil pump, fuel pump.
+- [owner-reports.md](s21-engine/owner-reports.md): 73 owner cases by symptom (ignition and timing, cooling, fuel supply, head gasket, oil pressure, noises, LPG), with "Patterns" and "Lessons owners repeat".
 - [gaz69-swap.md](s21-engine/gaz69-swap.md): firewall clearance, mounts, bellhousing.
+- [gaz69-s21-owner-reports.md](s21-engine/gaz69-s21-owner-reports.md): two GAZ-69s with S-21 swaps followed over 2–4 years (drive2.ru logbooks). Covers the water pump and crank pulley, throttle linkage, air filter, exhaust, breather, electrics and military conversions, and ends with a swap checklist.
 - [ignition-and-mods.md](s21-engine/ignition-and-mods.md): electronic ignition options.
 - [parts-sources.md](s21-engine/parts-sources.md), [videos.md](s21-engine/videos.md), [sources.md](s21-engine/sources.md).
 - `images/`: head bolt order, valve adjustment, TDC mark, points gap, fuel and oil pumps, GAZ-69 swap photos (`images.md` lists the sources).
