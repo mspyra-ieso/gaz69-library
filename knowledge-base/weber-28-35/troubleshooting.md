@@ -96,7 +96,7 @@ The EZ-20 exists to stop this. Checks:
 
 ## 6. Hesitation, flat spot, no power (dławi się, przerywa, nie wchodzi na obroty)
 
-1. **Accelerator pump.** Missing nozzle or ball (O21), split diaphragm, or the pump jet blocked. Check for a squirt.
+1. **Accelerator pump.** Missing nozzle or ball (O21), a worn or sticking pump piston (the 28/35 pump is a piston, not a diaphragm; see `wear-and-inspection.md` §4), or the pump jet blocked. Check for a squirt.
 2. **Small parts after disassembly.** A plunger and spring with its retainer in the cover (O22). Photos: `../weber-34s2b1/images/b-forum-weber-plunger-spring-1.jpg`.
 3. **Float level too low or not set** (O23), or a blocked primary main jet or emulsion tube (O24).
 4. **Main jets and emulsion tubes in the wrong throat.**

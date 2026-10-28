@@ -1,0 +1,18 @@
+# u-* images (tuning and adjustment track)
+
+- **Downloaded:** 2026-10-28, from archive.org page renders. Copyright stays with the original publishers; the images are kept for personal reference.
+- **"related"** marks the **FOS/Weber 34 DCHD** on the Polski Fiat 125p: the same family and the same piston starter, piston pump, release-lever lock and progression-hole sizes as the 28/35. Its jets, venturis and **vacuum** secondary differ, so use these images for **method only**.
+- The `t-` and `o-` images belong to the other tracks. The most useful ones for tuning are `t-wz-fig2-24/25-26/27…` and `t-28-35-s2b1-view-legend-zuk-manual-1994.jpg`.
+
+| File | What it shows | Used in | Source |
+|---|---|---|---|
+| u-wz-fig2-28-zuk-throttle-and-starter-cable-linkage.jpg | WZ Fig. 2.28 (machine-translated edition, PDF p.59): the **Żuk pedal → rods → intermediate lever (with damping spring 10) → throttle rod**, the starter cable 8 and the pedal return spring 7. The text gives the starter function A/B/C | linkage-and-pump.md §4; cold-start-device.md §4 | https://archive.org/download/zukowka-zuk-spare-parts-catalog/ZUK-BEN-angielski.pdf (PDF page 59; page image from ZUK-BEN-angielski_jp2.zip, leaf 0058) |
+| u-related-34dchd-calibration-table-fiat125p-book-1982.jpg | F125 Table 2-27: full 34 DCHD-1 17 / 34 DCHD 16 calibration. Same **0.8 / 1.2 / 1.5 progression holes**, 10 mm pump stroke and 1.75 needle as the 28/35; float "5.5…6". Bottom: the starter text | tuning.md §2 (comparison) | https://archive.org/details/PolskiFiat125pBudowaEksploatacjaNaprawa1982 (printed p.63, leaf n62) |
+| u-related-34dchd-piston-starter-fig2-64-fiat125p-book.jpg | F125 Fig. 2.64: **piston starter section** (valve 24, vacuum piston 29, weakening holes 27/28, reserve well 7) and lever positions A/B/C | cold-start-device.md §1 | same item, printed p.64 (leaf n63) |
+| u-related-34dchd-idle-progression-main-fig2-65-66-fiat125p-book.jpg | F125 Figs 2.65–2.66: **idle and progression circuit** (mixture screw 23, outlet 36, progression hole 37) and the main circuit with the **release-lever secondary lock** | tuning.md §2; idle-and-mixture.md §1 | same item, printed p.65 (leaf n64) |
+| u-related-34dchd-pump-checks-fig2-67-68-fiat125p-book.jpg | F125 Figs 2.67–2.68: vacuum secondary actuator (34 DCHD only) and the **piston accelerator pump**. Text: the pre-dismantling checks, i.e. **pump output ≥ 6 cm³ per 5 strokes**, the **starter-valve 3-minute leak test** and the fuel-level check | linkage-and-pump.md §1; cold-start-device.md §5 | same item, printed p.66 (leaf n65) |
+| u-related-34dchd-throttle-opening-progression-holes-fig2-69-70-fiat125p-book.jpg | F125 Figs 2.69–2.70: **checking full opening and the secondary release point** (bend arm 4 / arm 2, twist lever 3); **progression holes relative to the closed plate edge**. Text: spindle clearances, the 0.05 mm secondary gap, "do not swap plates" | linkage-and-pump.md §2–3 | same item, printed p.67 (leaf n66) |
+| u-related-34dchd-needle-float-fuel-level-fiat125p-book.jpg | F125 p.68: needle-valve test pressure 0.033 MPa, damper-ball forces, float 18 ±0.5 g (hot-water leak test). **Float 5–5.5 mm ↔ fuel 23 mm below the top; 6 mm ↔ 25.5 mm, "for excessive consumption"** | tuning.md §2, §4 | same item, printed p.68 (leaf n67) |
+| u-related-34dchd-idle-co-procedure-fiat125p-book.jpg | F125 p.69: the **idle procedure with CO meter: 850 ±50 rpm, CO 1.2–2 % (max 4.5 %)**, the no-meter fallback, and the manifold drain hole | idle-and-mixture.md §3b | same item, printed p.69 (leaf n68) |
+
+Page images from the Fiat book were fetched as `https://archive.org/download/PolskiFiat125pBudowaEksploatacjaNaprawa1982/page/n{leaf}.jpg`.

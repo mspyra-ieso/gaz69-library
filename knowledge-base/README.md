@@ -18,57 +18,34 @@ Owners rarely name the carburettor or the engine; they say "Weber" or "gaźnik" 
 
 > An earlier version of this knowledge base targeted the older **Weber 34S2B1** by mistake. That material is kept in [`weber-34s2b1/`](weber-34s2b1/) for reference. **Its float level (5–5.5 mm), jets and "no solenoid" notes do not apply to your 28/35.**
 
-## Start here: "it ran, someone cleaned the carb, now it won't run"
+## How to use this knowledge base
 
-In owner reports, a no-start after cleaning a 28/35 is usually a **reassembly mistake**, not a worn-out carburettor. Work top to bottom and stop when the engine runs. The full version is [weber-28-35/after-cleaning-checklist.md](weber-28-35/after-cleaning-checklist.md).
+- **Something is wrong:** go to "Diagnose by symptom" below, then the matching section of [weber-28-35/troubleshooting.md](weber-28-35/troubleshooting.md) or [s21-engine/diagnosis-guide.md](s21-engine/diagnosis-guide.md). Look for a case like yours in the owner reports.
+- **Setting up or tuning:** [weber-28-35/tuning.md](weber-28-35/tuning.md) (what each jet does, re-jetting, economy vs power, modern fuel, an 11-step procedure from the factory baseline), [idle-and-mixture.md](weber-28-35/idle-and-mixture.md), [cold-start-device.md](weber-28-35/cold-start-device.md), [linkage-and-pump.md](weber-28-35/linkage-and-pump.md), [adjustment-procedures.md](weber-28-35/adjustment-procedures.md).
+- **Rebuilding the carb:** [weber-28-35/overhaul-guide.md](weber-28-35/overhaul-guide.md), [wear-and-inspection.md](weber-28-35/wear-and-inspection.md), [rebuild-kits.md](weber-28-35/rebuild-kits.md), [interchangeability.md](weber-28-35/interchangeability.md). If the carb has just been cleaned or rebuilt and now runs worse, use [weber-28-35/after-cleaning-checklist.md](weber-28-35/after-cleaning-checklist.md).
+- **Looking up a value:** "Quick reference" below.
 
-1. **Rule out what the job may have disturbed outside the carb.** This takes about 10 minutes.
-   - In owner reports, about **1 case in 7 blamed on the carb was really ignition or plugs**: brand-new plugs (ISKRA, three times), new condensers or HT leads.
-   - **Timing** is easily lost after oil-pump or distributor work, because the oil pump drives the distributor. Firing order is 1-2-4-3.
-   - **Fuel delivery:** disconnect the hose at the carb and crank. There should be strong pulses.
-   - On the GAZ-69 swap, an **electric pump must be low-pressure**. The S-21 has no return line, and too much pressure floods the carb.
-   - See [s21-engine/diagnosis-guide.md](s21-engine/diagnosis-guide.md).
-2. **The EZ-20 solenoid comes first** among the carb checks. With no power, a spring-loaded needle shuts the idle jet, so there is **no idle at all**, although the engine may still run on throttle.
-   - With the ignition on, it needs **+12 V**. Factory wiring takes it from the coil's + (low-tension) terminal.
-   - **Click test:** pull the wire off and touch it back on; you should hear a click.
-   - On a swap, the wire may be unconnected, corroded or permanently live. A permanent feed makes the engine run on after switch-off.
-   - The **45 idle jet on the solenoid's tip** must be present and not snapped off, and its sealing ring must be intact.
-   - **Get-you-home fix (factory, 1989):** remove the needle and refit the holder with the jet. The engine will idle but may run on after switch-off.
-   - See [weber-28-35/solenoid-ez20.md](weber-28-35/solenoid-ez20.md).
-3. **Quick checks with the air filter off:**
-   - the accelerator pump squirts when the throttle is opened;
-   - the cold-start lever moves through its full travel and returns fully;
-   - both throttle plates close;
-   - the secondary opens through its linkage;
-   - no vacuum leaks: base gaskets, the **phenolic spacer** (a cracked one caused lean pinking on another S-21 GAZ-69), the vacuum-advance hose and the breather hose.
-4. **Lift the top cover and check the reassembly.** Factory 28/35 S2A1 values:
+## Diagnose by symptom
 
-   | Throat | Main jet | Air correction | Emulsion tube | Idle |
-   |---|---|---|---|---|
-   | **I (28 mm, primary)** | **110** | **250** | **F27** | 45 on the solenoid tip |
-   | **II (35 mm, secondary)** | **145** (S2B1: 125) | **225** (S2B1: 220) | **F35** | 100 (progression) |
+Owner reports repeat two lessons:
+- **Rule out ignition and fuel supply before blaming the carb.** About 1 case in 7 blamed on the carb was really plugs, condensers, HT leads or timing. Timing is easily lost after oil-pump or distributor work, because the oil pump drives the distributor.
+- **On the 28/35, check the EZ-20 idle cut-off solenoid early.** With no power, there is no idle at all.
 
-   - **Jets swapped between throats** is the commonest cleaning error.
-   - **Float level:** **6.25–6.75 mm** on the S2A/S2A1, or **7 ±0.25 mm** on the S2B1. Measure with the cover held vertical, **without the gasket**, and without pressing in the needle's damper ball.
-   - **Float condition:** a good float weighs about 18 g. A heavier one (24 g was reported) is holed and full of fuel.
-   - **Needle valve:** 175, seated and free.
-   - **Small parts present:** the accelerator-pump nozzle and its ball, the pump valve, plungers, springs and retainers, the inlet filter.
-   - **Passages truly clear.** Blow them through with air; never use wire. One owner needed a second, deep soak before it ran.
-   - **Gaskets** single and complete.
-   - See [weber-28-35/specs-and-jets.md](weber-28-35/specs-and-jets.md).
-5. **Base settings:**
-   - Screw the idle mixture screw gently fully in, then back it out **2 turns** (enthusiast-site figure; there is no factory starting value). **Screwing in makes it leaner.** One forum post says the opposite; it is wrong.
-   - Set idle hot to **600–800 rpm**.
-   - See [weber-28-35/adjustment-procedures.md](weber-28-35/adjustment-procedures.md).
-6. **Floods?**
-   - Check the float level, then the needle valve, then whether the float is holed.
-   - Fuel coming out of the **two small drain holes in the intake manifold** means the carb is overflowing. Don't block them.
-   - High fuel-pump pressure also floods the carb. This happens if the pump's insulating spacer is missing, or with an electric pump.
-7. **Still stuck?**
-   - Go through [weber-28-35/troubleshooting.md](weber-28-35/troubleshooting.md) by symptom.
-   - Look for a case like yours among the 51 owner cases in [weber-28-35/owner-reports.md](weber-28-35/owner-reports.md).
-   - For engine-side causes, see [s21-engine/owner-reports.md](s21-engine/owner-reports.md).
-   - For swap-specific issues, see [s21-engine/gaz69-s21-owner-reports.md](s21-engine/gaz69-s21-owner-reports.md), which ends with a swap checklist.
+| Symptom | Check first | Then | Details |
+|---|---|---|---|
+| **Won't start** | Spark and timing (firing order 1-2-4-3); fuel reaching the carb; plugs wet or dry | Float/needle (flooding); cold-start device; jets blocked | [troubleshooting §1](weber-28-35/troubleshooting.md), [engine diagnosis](s21-engine/diagnosis-guide.md) |
+| **Starts, then dies** | Solenoid power (+12 V with ignition on, click test); fuel pump (sticking, valves) | Idle jet (45 on the solenoid tip) blocked or broken; vacuum leak at the base or spacer | [troubleshooting §2](weber-28-35/troubleshooting.md), [solenoid](weber-28-35/solenoid-ez20.md) |
+| **No idle, or hunting idle** | Solenoid and its idle jet; vacuum leaks (base gaskets, phenolic spacer, hoses) | Mixture and idle screws; ignition (points, dwell 65°, timing); valve clearances | [troubleshooting §3](weber-28-35/troubleshooting.md) |
+| **Runs on after switch-off** | Solenoid feed permanently live, or a plain jet fitted instead of the solenoid | Idle speed too high; carbon or overheating | [troubleshooting §4](weber-28-35/troubleshooting.md) |
+| **Floods or leaks fuel** (fuel from the manifold drain holes) | Float level (6.25–6.75 mm S2A1, no gasket); needle valve; holed float (more than 18 g) | Fuel pump pressure (spacer missing, electric pump) | [troubleshooting §5](weber-28-35/troubleshooting.md) |
+| **Hesitation, flat spot, no power** | Accelerator pump squirt; secondary opening; air filter | Main jets/emulsion tubes; float low; ignition advance; fuel supply at high flow | [troubleshooting §6](weber-28-35/troubleshooting.md) |
+| **Backfire into the carb** | Lean mixture (vacuum leak, low float, blocked jet) | Timing too advanced; tight intake valve | [troubleshooting §7](weber-28-35/troubleshooting.md) |
+| **Black smoke, high consumption** | Cold-start device not returning; float high or needle leaking | Jets enlarged or wrong; mixture screw; air filter blocked | [troubleshooting §8](weber-28-35/troubleshooting.md) |
+| **Dies when hot, hard hot start** | Vapour lock: fuel lines near the exhaust, heat shield, spacer | Float level; condenser or coil failing hot | [troubleshooting §9](weber-28-35/troubleshooting.md) |
+| **Overheating, knocking, oil pressure, smoke, noises** | Engine side | — | [s21-engine/common-problems.md](s21-engine/common-problems.md), [owner reports](s21-engine/owner-reports.md) |
+| **Electrical oddities** (false gauge readings, no charge, intermittent stalling) | Earths: engine to body, battery earth (a painted clutch housing left one engine with no earth) | Senders, regulator, ignition switch | [s21-engine/electrics.md](s21-engine/electrics.md) |
+
+**For a GAZ-69 with an S-21,** also go through the swap checklist at the end of [s21-engine/gaz69-s21-owner-reports.md](s21-engine/gaz69-s21-owner-reports.md). It covers the throttle linkage, cooling, crank pulley and water pump, exhaust clearance, fuel pump type and the carb spacer.
 
 ## Identify your 28/35 variant
 
@@ -110,7 +87,7 @@ Factory documents use "S2A" and "S2A1" for the same calibration. Details: [weber
 ## Folder contents
 
 ### `weber-28-35/`: your carburettor
-- [after-cleaning-checklist.md](weber-28-35/after-cleaning-checklist.md): step by step for your exact situation.
+- [after-cleaning-checklist.md](weber-28-35/after-cleaning-checklist.md): what to check if the carb runs worse after a clean or rebuild.
 - [troubleshooting.md](weber-28-35/troubleshooting.md): by symptom (won't start, no idle, dies, runs on, floods, hesitation, backfire, black smoke, dies when hot).
 - [owner-reports.md](weber-28-35/owner-reports.md): 51 owner cases (37 carried over, 14 new). Each is marked confirmed or suggested, has a short Polish quote, and contradictions with factory data are flagged. The file ends with a "Patterns" ranking.
 - [solenoid-ez20.md](weber-28-35/solenoid-ez20.md): how the solenoid works, wiring, tests, substitutes.
@@ -120,9 +97,22 @@ Factory documents use "S2A" and "S2A1" for the same calibration. Details: [weber
 - [rebuild-kits.md](weber-28-35/rebuild-kits.md):
   - **Best match:** ETER-MOT "Weber 28/35 S2A1 zestaw naprawczy" at about 320 zł. It has gaskets, diaphragms and small parts; confirm the contents with the seller first.
   - **EZ-20 solenoid:** about 320 zł new or 120 zł regenerated.
+- **Tuning and setup:**
+  - [tuning.md](weber-28-35/tuning.md)
+  - [idle-and-mixture.md](weber-28-35/idle-and-mixture.md): the mixture screw turned in is leaner; three sources agree.
+  - [cold-start-device.md](weber-28-35/cold-start-device.md)
+  - [linkage-and-pump.md](weber-28-35/linkage-and-pump.md): includes adapting the GAZ-69 pedal linkage.
+  - Some reference values (idle CO 1.2–2 %, pump output, secondary checks) come from the sister **34 DCHD** carb in the 1982 Fiat 125p book. They are marked RELATED.
+- **Overhaul and parts:**
+  - [overhaul-guide.md](weber-28-35/overhaul-guide.md)
+  - [wear-and-inspection.md](weber-28-35/wear-and-inspection.md): throttle spindle play is the main wear point. The pump is a **piston, not a diaphragm**.
+  - [interchangeability.md](weber-28-35/interchangeability.md): the cover and base gaskets share part numbers with the Fiat 125p/Polonez set. It also covers substitute carbs.
+- **Background:**
+  - [history-and-makers.md](weber-28-35/history-and-makers.md)
+  - [ownership-experience.md](weber-28-35/ownership-experience.md): fuel use of 9–11 l/100 km on the road; owner improvements; the Weber can stall on steep tilts.
 - [videos.md](weber-28-35/videos.md).
-- `images/`: factory parts-catalogue and bulletin pages, manual pages, book figures, kit and solenoid photos. `t-images.md` and `o-images.md` list the source of each image.
-- `sources-technical.md`, `sources-owner.md`: every URL used.
+- `images/`: factory parts-catalogue and bulletin pages, manual pages, book figures, kit and solenoid photos. `t-`, `o-`, `u-` and `w-images.md` list the source of each image.
+- `sources-technical.md`, `sources-owner.md`, `sources-tuning.md`, `sources-broad.md`: every URL used.
 
 ### `s21-engine/`: the engine
 - [factory-service-data.md](s21-engine/factory-service-data.md): **factory values with manual and page**, covering torques, timing and advance curve, dwell, compression, plugs, valves, oil, cooling and the fuel pump. It supersedes the older specs file.
