@@ -1,5 +1,7 @@
 # Weber 34S2B1 (Polmo) on FSO S-21: troubleshooting by symptom
 
+> **Reference only.** This file is about the older **34S2B1**. For the owner's **Weber 28/35**, use [../weber-28-35/](../weber-28-35/after-cleaning-checklist.md).
+
 These notes cover the Polmo-licensed Weber twin-choke carburettors fitted to the S-21 engine (Żuk, Nysa, Tarpan, Warszawa 223/224). Most owner sources just say "Weber" or "gaźnik" without naming the variant. Where a source is about the sister **28/35 S2A1**, or names no variant, that is stated. The 34S2B1 and 28/35 S2A1 share their basic layout: accelerator pump (pompka przyspieszająca), float bowl, needle valve and idle screws. Per the factory manuals, though, only the 28/35 types have the idle cut-off solenoid (elektrozawór). The 34S2B1 has plain idle jets (50/50) and a piston cold-start device instead of a choke flap. Jet sizes and venturis also differ (see `specs-and-jets.md`). Solenoid-related tips below apply to the 28/35 only.
 
 Labels used below:

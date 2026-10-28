@@ -1,5 +1,7 @@
 # FSO S-21: Specs and Service Data
 
+> **Superseded:** factory values (head torque 110–120 Nm, dwell 65°, timing 8° ± 1° on 85/86-octane fuel, exhaust valve clearance 0.30–0.32 mm cold, compression, Iskra F75 plug) are now in [factory-service-data.md](factory-service-data.md). Where this page disagrees, use that one.
+
 Use this alongside the factory manuals you already have. **Where the manual disagrees with this page, trust the manual.** Each value below gives its source and is tagged:
 
 - **[DOC]**: from a factory or manual-derived source (a scan of a manual drawing, or a club "basic adjustments" page built from the manuals).

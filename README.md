@@ -24,4 +24,4 @@ Each book is in its own folder, and the pages are numbered in reading order (`00
 
 ## Knowledge base
 
-[`knowledge-base/`](knowledge-base/README.md) collects factory data and owner experience for the **FSO S-21 engine** and its **Polish Weber carburettor** (34S2B1 and related types). It includes a start-here guide for an engine that won't run after the carburettor was cleaned.
+[`knowledge-base/`](knowledge-base/README.md) collects factory data and owner experience for the **FSO S-21 engine** and its **Polish Weber 28/35 carburettor** (plus the older 34S2B1 for reference). It includes a start-here guide for an engine that won't run after the carburettor was cleaned.

@@ -1,9 +1,12 @@
-# S-21 engine and Weber carburettor knowledge base
+# S-21 engine and Weber 28/35 carburettor knowledge base
 
-This knowledge base is for an FSO **S-21** engine (2.12 L OHV, about 70 hp) with a Polish-made **Weber** twin-throat carburettor, fitted in a **GAZ-69**. It was compiled in October 2026 from:
-- factory Żuk and Nysa owner's manuals (archive.org),
-- the FSO manuals in this repo,
-- Polish owner forums, mainly forum.polskiedostawczaki.pl, zlombol.pl, elektroda.pl and drive2.ru,
+This knowledge base is for an FSO **S-21** engine (2.12 L OHV, about 70 hp) with a Polish-made **Weber 28/35** twin-throat carburettor that has an **EZ-20 idle cut-off solenoid**. The engine is fitted in a **GAZ-69**, which originally had the M-20. The carburettor is most likely the **28/35 S2A1**, the common type on S-21 Żuks and Nysas.
+
+It was compiled in October 2026 from:
+- factory Żuk documents on archive.org: owner's manuals from 1985, 1989 and 1994, the 1988 parts catalogue and the 1991 factory bulletins;
+- the FSO manuals in this repo;
+- Polish owner forums, mainly forum.polskiedostawczaki.pl, zlombol.pl and syrena.nekla.pl;
+- Russian drive2.ru logbooks of S-21 GAZ-69s;
 - shops and videos.
 
 Every fact links to its source. Each file labels its sources as one of:
@@ -11,102 +14,136 @@ Every fact links to its source. Each file labels its sources as one of:
 - **[FORUM]**: owner experience.
 - **[GENERAL]**: general carburettor practice.
 
-Owners almost never write the carburettor's model code; they just say "Weber" or "gaźnik". A post counts as relevant when the vehicle is a Żuk, Nysa, Tarpan, Warszawa 223/224, or a GAZ-69 with an S-21.
+Owners rarely name the carburettor or the engine; they say "Weber" or "gaźnik" and name the vehicle (Żuk, Nysa, Tarpan, Warszawa 223/224).
+
+> An earlier version of this knowledge base targeted the older **Weber 34S2B1** by mistake. That material is kept in [`weber-34s2b1/`](weber-34s2b1/) for reference. **Its float level (5–5.5 mm), jets and "no solenoid" notes do not apply to your 28/35.**
 
 ## Start here: "it ran, someone cleaned the carb, now it won't run"
 
-Work top to bottom. Stop when the engine runs.
+In owner reports, a no-start after cleaning a 28/35 is usually a **reassembly mistake**, not a worn-out carburettor. Work top to bottom and stop when the engine runs. The full version is [weber-28-35/after-cleaning-checklist.md](weber-28-35/after-cleaning-checklist.md).
 
-1. **Identify the carburettor** (next section). Three of the commonest forum tips (solenoid, choke flap, 6.5 mm float) only apply to the later 28/35.
-2. **Rule out what the cleaning may have disturbed outside the carb.** In owner reports, about **1 case in 7 blamed on the carb was really ignition or plugs**: brand-new plugs (ISKRA three times), new condensers, or HT leads. **Timing** is often lost after oil-pump or distributor work, because the oil pump drives the distributor. This takes about 10 minutes:
-   - **Spark:** a strong blue spark jumping a few mm.
-   - **Timing:** was the distributor or fuel pump moved? Firing order is 1-2-4-3.
+1. **Rule out what the job may have disturbed outside the carb.** This takes about 10 minutes.
+   - In owner reports, about **1 case in 7 blamed on the carb was really ignition or plugs**: brand-new plugs (ISKRA, three times), new condensers or HT leads.
+   - **Timing** is easily lost after oil-pump or distributor work, because the oil pump drives the distributor. Firing order is 1-2-4-3.
    - **Fuel delivery:** disconnect the hose at the carb and crank. There should be strong pulses.
-   - **Plugs:** dry or wet tells you whether you have no fuel or flooding.
-   - See [s21-engine/diagnosis-guide.md](s21-engine/diagnosis-guide.md), sections 0–3.
-3. **Quick on-engine carb checks, air filter off:**
-   - the accelerator pump squirts when you open the throttle;
-   - the cold-start knob moves the starter device through its full travel and fully back;
+   - On the GAZ-69 swap, an **electric pump must be low-pressure**. The S-21 has no return line, and too much pressure floods the carb.
+   - See [s21-engine/diagnosis-guide.md](s21-engine/diagnosis-guide.md).
+2. **The EZ-20 solenoid comes first** among the carb checks. With no power, a spring-loaded needle shuts the idle jet, so there is **no idle at all**, although the engine may still run on throttle.
+   - With the ignition on, it needs **+12 V**. Factory wiring takes it from the coil's + (low-tension) terminal.
+   - **Click test:** pull the wire off and touch it back on; you should hear a click.
+   - On a swap, the wire may be unconnected, corroded or permanently live. A permanent feed makes the engine run on after switch-off.
+   - The **45 idle jet on the solenoid's tip** must be present and not snapped off, and its sealing ring must be intact.
+   - **Get-you-home fix (factory, 1989):** remove the needle and refit the holder with the jet. The engine will idle but may run on after switch-off.
+   - See [weber-28-35/solenoid-ez20.md](weber-28-35/solenoid-ez20.md).
+3. **Quick checks with the air filter off:**
+   - the accelerator pump squirts when the throttle is opened;
+   - the cold-start lever moves through its full travel and returns fully;
    - both throttle plates close;
-   - no vacuum leaks: base gasket, insulator spacer, vacuum-advance hose, breather hose.
-   - See [weber-34s2b1/after-cleaning-checklist.md](weber-34s2b1/after-cleaning-checklist.md), section B.
-4. **Lift the top cover and check the reassembly.** These are the commonest post-cleaning faults reported by owners:
-   - **Jets in the wrong holes.** On the 34S2B1 the main jets are **120 primary / 150 secondary**; they must not be swapped. Emulsion tubes F30/F30. Idle jets 50/50. Air jets 210/210.
-   - **Float setting: 5–5.5 mm**, cover held vertical (factory, 34S2B1). Float moves freely. Needle valve seated and not stuck.
-   - **Small parts present:** pump nozzle and its ball, pump valve, springs and retainers, the inlet filter.
-   - **Passages truly clear.** Blow through with air; never use wire. One owner only got theirs running after a second deep clean.
-   - **Gaskets single, complete, and not blocking passages.**
-   - See [weber-34s2b1/after-cleaning-checklist.md](weber-34s2b1/after-cleaning-checklist.md), section C, and [weber-34s2b1/specs-and-jets.md](weber-34s2b1/specs-and-jets.md).
-5. **Base settings to get it running:**
-   - Idle mixture screw: seat it gently, then back out about **2–3 turns**. The factory gives about 3 turns; a healthy unit usually ends up 0.5–1.25 turns out. **In = leaner.**
-   - Open the idle-speed screw enough to keep the engine running.
-   - Final adjustment hot, on the **primary only**.
-   - See [weber-34s2b1/adjustment-procedures.md](weber-34s2b1/adjustment-procedures.md).
+   - the secondary opens through its linkage;
+   - no vacuum leaks: base gaskets, the **phenolic spacer** (a cracked one caused lean pinking on another S-21 GAZ-69), the vacuum-advance hose and the breather hose.
+4. **Lift the top cover and check the reassembly.** Factory 28/35 S2A1 values:
+
+   | Throat | Main jet | Air correction | Emulsion tube | Idle |
+   |---|---|---|---|---|
+   | **I (28 mm, primary)** | **110** | **250** | **F27** | 45 on the solenoid tip |
+   | **II (35 mm, secondary)** | **145** (S2B1: 125) | **225** (S2B1: 220) | **F35** | 100 (progression) |
+
+   - **Jets swapped between throats** is the commonest cleaning error.
+   - **Float level:** **6.25–6.75 mm** on the S2A/S2A1, or **7 ±0.25 mm** on the S2B1. Measure with the cover held vertical, **without the gasket**, and without pressing in the needle's damper ball.
+   - **Float condition:** a good float weighs about 18 g. A heavier one (24 g was reported) is holed and full of fuel.
+   - **Needle valve:** 175, seated and free.
+   - **Small parts present:** the accelerator-pump nozzle and its ball, the pump valve, plungers, springs and retainers, the inlet filter.
+   - **Passages truly clear.** Blow them through with air; never use wire. One owner needed a second, deep soak before it ran.
+   - **Gaskets** single and complete.
+   - See [weber-28-35/specs-and-jets.md](weber-28-35/specs-and-jets.md).
+5. **Base settings:**
+   - Screw the idle mixture screw gently fully in, then back it out **2 turns** (enthusiast-site figure; there is no factory starting value). **Screwing in makes it leaner.** One forum post says the opposite; it is wrong.
+   - Set idle hot to **600–800 rpm**.
+   - See [weber-28-35/adjustment-procedures.md](weber-28-35/adjustment-procedures.md).
 6. **Floods?**
-   - Screw the mixture screw fully in. If the engine still runs, fuel is getting past the float or needle.
+   - Check the float level, then the needle valve, then whether the float is holed.
    - Fuel coming out of the **two small drain holes in the intake manifold** means the carb is overflowing. Don't block them.
-   - See [weber-34s2b1/troubleshooting.md](weber-34s2b1/troubleshooting.md).
-7. **Still stuck?** Go through the symptom tables in [weber-34s2b1/troubleshooting.md](weber-34s2b1/troubleshooting.md), [weber-34s2b1/forum-experiences.md](weber-34s2b1/forum-experiences.md) and [weber-34s2b1/owner-reports.md](weber-34s2b1/owner-reports.md). For engine-side causes, see [s21-engine/owner-reports.md](s21-engine/owner-reports.md). For GAZ-69-specific swap issues, see [s21-engine/gaz69-s21-owner-reports.md](s21-engine/gaz69-s21-owner-reports.md), which ends with a swap checklist. On the GAZ-69 swap, also check the crankcase breather valve linkage worked from the carb throttle spindle.
+   - High fuel-pump pressure also floods the carb. This happens if the pump's insulating spacer is missing, or with an electric pump.
+7. **Still stuck?**
+   - Go through [weber-28-35/troubleshooting.md](weber-28-35/troubleshooting.md) by symptom.
+   - Look for a case like yours among the 51 owner cases in [weber-28-35/owner-reports.md](weber-28-35/owner-reports.md).
+   - For engine-side causes, see [s21-engine/owner-reports.md](s21-engine/owner-reports.md).
+   - For swap-specific issues, see [s21-engine/gaz69-s21-owner-reports.md](s21-engine/gaz69-s21-owner-reports.md), which ends with a swap checklist.
 
-## Identify your carburettor
+## Identify your 28/35 variant
 
-The model code is cast or stamped on the body or the float-chamber cover.
-
-| What you see | Likely type | Notes |
+| Check | S2A / S2A1 | S2B1 (from 1991–92) |
 |---|---|---|
-| Both throats 34 mm, equal size; **no electrical solenoid** on the body; a round **cold-start (starter) device worked by a cable** on the side; secondary throttle opened by a **lever from the primary spindle** | **34S2B1** (factory type, Nysa 1977 / Żuk 1985) | Factory data in [weber-34s2b1/specs-and-jets.md](weber-34s2b1/specs-and-jets.md), Table 1 |
-| As above, but a **diaphragm pot with a hose and rod to the secondary throttle** | Vacuum-secondary variant (forum says **34S2A1**; unconfirmed) | Jets per one book: main 125/145 |
-| Throats **unequal** (21/26 mm venturis), **electrical idle cut-off solenoid** (one wire) | **28/35 S2A** (1989) or **28/35 S2B1** (1994, adds an economiser) | Solenoid needs +12 V with the ignition on, or there is no idle |
+| Marking on body | "28/35 S2A" (often with GN.1113) | "28/35 S2B1" |
+| Secondary main jet / air jet | 145 / 225 | 125 / 220 |
+| Economiser feeding throat II (jet 80, nozzle 2.5) | no | **yes** |
+| Mixture screw | adjustable | sealed with a cap (often missing on old carbs) |
+| Float level | 6.25–6.75 mm | 7 ±0.25 mm |
 
-Earlier on, we believed the 34S2B1 had a vacuum-opened secondary. The factory manuals say its secondary is **mechanically** linked. Check your carburettor to see which you have. Details are in [weber-34s2b1/variants-and-history.md](weber-34s2b1/variants-and-history.md).
+Factory documents use "S2A" and "S2A1" for the same calibration. Details: [weber-28-35/variants.md](weber-28-35/variants.md).
 
 ## Quick reference
 
 | Item | Value | Source |
 |---|---|---|
-| **34S2B1 main jets I / II** | 120 / 150 | Factory, Żuk 1985 + Nysa 1977 |
-| 34S2B1 venturis, air jets, emulsion tubes | 25/25, 210/210, F30/F30 | Factory |
-| 34S2B1 idle jets | 50 / 50 | Factory |
-| 34S2B1 pump jet; needle valve | 70; 175 | Factory |
-| 34S2B1 float setting | 5–5.5 mm (cover vertical); float travel 8.5 mm | Factory |
-| Idle speed | 600–800 rpm (Żuk 1985); 550–650 (Nysa 1977) | Factory |
-| Firing order | 1-2-4-3 | Club manual extract + owners |
-| Points gap | 0.4 ± 0.05 mm | Club manual extract |
-| Plug gap | 0.6–0.7 mm | Club manual extract |
-| Valve clearance, cold | Intake 0.20–0.22 / exhaust 0.25–0.30 mm | Club manual extract |
-| Static timing | 7° BTDC (5° in another source); TDC ball or hole on the flywheel, seen through the bellhousing window | Conflict; check the FSO manuals |
-| Head bolt torque | **No factory S-21 figure found.** Owners use 120–130 Nm; the only published figure, 66–71 Nm, is for the M-20. **Check the FSO repair manual before using either.** | Conflict |
-| Dwell, compression | **Not found online.** Check the FSO repair manuals in this repo | — |
+| **28/35 S2A1 jets I / II** | Main 110/145, air 250/225, tubes F27/F35 | Factory: Żuk parts catalogue 1988, Żuk manual 1989 |
+| 28/35 venturis I / II | 21 / 26 (aux. 4.5 / 4.5) | Factory |
+| Idle jets | 45 (on the EZ-20 tip) / 100 secondary progression; idle air 175 / 80; mixture jet 170 | Factory |
+| Accelerator pump | Jet 40, valve 80, stroke 10 mm, 5 cm³ per 10 strokes | Factory |
+| Needle valve; float mass | 175; about 18 g | Factory |
+| **Float level** | S2A/S2A1: 6.25–6.75 mm; S2B1: 7 ±0.25 mm; cover vertical, no gasket | Book (Wiejak & Zagaja) + 1994 manual |
+| Idle speed | 600–800 rpm | Factory |
+| EZ-20 solenoid | Fed from the coil's + terminal with the ignition on; part 033845, idle jet 033842 (45) | Factory |
+| Firing order | **1-2-4-3** (every manual; 1-3-4-2 is the Andoria diesel) | Factory |
+| Points gap / dwell | 0.35–0.45 mm / 65° ± 4° | Factory (Żuk 1985, 1989) |
+| Static timing | **8° ± 1° BTDC** for 85/86-octane fuel (Żuk 1985/1989). 5° ± 1° was the setting for 78-octane. Confirm with the factory road test. | Factory |
+| Spark plug | Iskra F75 (M14×1.25, 12.7 mm reach, heat value 225–240); gap about 0.6 mm | Factory (Żuk 1985) |
+| Valve clearance, cold | **Intake 0.20–0.22 / exhaust 0.30–0.32 mm** | Factory (every manual) |
+| **Head bolt torque** | **110–120 Nm cold**, spiral from the centre; re-torque after about 1,500 km | Factory (all five manuals) |
+| Main bearings / big ends / flywheel | 121–133 / 67–74 / 75–81 Nm | Factory (Warszawa 1965) |
+| Compression | New 10–11 kG/cm²; limit 9; max 7 % difference between cylinders | Factory |
+| Oil pressure | 0.1–0.5 MPa; hot idle minimum about 0.8 kG/cm² | Factory |
+| Fuel pump pressure | 0.2–0.285 kG/cm² | Factory (Warszawa 1965) |
+| Thermostat | Opens about 71–83 °C (TS-3) | Factory (Żuk 1985) |
+| All engine values with pages | [s21-engine/factory-service-data.md](s21-engine/factory-service-data.md) | — |
 
 ## Folder contents
 
-### `weber-34s2b1/`: the carburettor
-- [variants-and-history.md](weber-34s2b1/variants-and-history.md): which variant was fitted when; 34S2B1 vs 34S2A1/A2 vs 28/35.
-- [specs-and-jets.md](weber-34s2b1/specs-and-jets.md): full jet and calibration tables per variant, with conflicts flagged.
-- [how-it-works.md](weber-34s2b1/how-it-works.md): circuits, the starter device, the secondary linkage.
-- [adjustment-procedures.md](weber-34s2b1/adjustment-procedures.md): float level, idle, starter device, factory steps.
-- [after-cleaning-checklist.md](weber-34s2b1/after-cleaning-checklist.md): a 19-step checklist for your exact situation.
-- [troubleshooting.md](weber-34s2b1/troubleshooting.md): by symptom, with a table of short Polish original quotes.
-- [forum-experiences.md](weber-34s2b1/forum-experiences.md): real symptom → fix cases, each with a link and a short Polish quote.
-- [owner-reports.md](weber-34s2b1/owner-reports.md): 27 more owner cases (Żuk, Nysa, Warszawa) from other threads and forums. Marked confirmed or suggested, with advice that contradicts factory data flagged, and ending in a "Patterns" ranking.
-- [rebuild-kits.md](weber-34s2b1/rebuild-kits.md): kits, sellers, prices. Best match found: ETER-MOT 34S2A1/34S2B1 kit, about 320 zł; ask the seller to confirm the type first.
-- [videos.md](weber-34s2b1/videos.md).
-- `images/`: factory manual pages (jet tables, float drawings, exploded views, fault table), gasket shapes, forum photos. `a-images.md` and `b-images.md` list the source of each image.
-- `sources-technical.md`, `sources-troubleshooting.md`: every URL used.
+### `weber-28-35/`: your carburettor
+- [after-cleaning-checklist.md](weber-28-35/after-cleaning-checklist.md): step by step for your exact situation.
+- [troubleshooting.md](weber-28-35/troubleshooting.md): by symptom (won't start, no idle, dies, runs on, floods, hesitation, backfire, black smoke, dies when hot).
+- [owner-reports.md](weber-28-35/owner-reports.md): 51 owner cases (37 carried over, 14 new). Each is marked confirmed or suggested, has a short Polish quote, and contradictions with factory data are flagged. The file ends with a "Patterns" ranking.
+- [solenoid-ez20.md](weber-28-35/solenoid-ez20.md): how the solenoid works, wiring, tests, substitutes.
+- [specs-and-jets.md](weber-28-35/specs-and-jets.md): full factory tables for the S2A/S2A1 and S2B1, float-level resolution, part numbers.
+- [variants.md](weber-28-35/variants.md): timeline, S2A1 vs S2B1, how to identify yours.
+- [how-it-works.md](weber-28-35/how-it-works.md), [adjustment-procedures.md](weber-28-35/adjustment-procedures.md).
+- [rebuild-kits.md](weber-28-35/rebuild-kits.md):
+  - **Best match:** ETER-MOT "Weber 28/35 S2A1 zestaw naprawczy" at about 320 zł. It has gaskets, diaphragms and small parts; confirm the contents with the seller first.
+  - **EZ-20 solenoid:** about 320 zł new or 120 zł regenerated.
+- [videos.md](weber-28-35/videos.md).
+- `images/`: factory parts-catalogue and bulletin pages, manual pages, book figures, kit and solenoid photos. `t-images.md` and `o-images.md` list the source of each image.
+- `sources-technical.md`, `sources-owner.md`: every URL used.
 
 ### `s21-engine/`: the engine
-- [specs-and-service-data.md](s21-engine/specs-and-service-data.md)
+- [factory-service-data.md](s21-engine/factory-service-data.md): **factory values with manual and page**, covering torques, timing and advance curve, dwell, compression, plugs, valves, oil, cooling and the fuel pump. It supersedes the older specs file.
+- [electrics.md](s21-engine/electrics.md): earths (a painted clutch housing left one engine with no earth), charging, starter, ignition switch, senders, and the factory test-lamp fault-finding procedure.
+- [fuel-and-conditions.md](s21-engine/fuel-and-conditions.md): modern unleaded fuel, E10, LPG, factory cold-start procedure.
+- [specs-and-service-data.md](s21-engine/specs-and-service-data.md): older collection of forum and club values.
 - [diagnosis-guide.md](s21-engine/diagnosis-guide.md): no-start and rough-running order.
-- [common-problems.md](s21-engine/common-problems.md): overheating (corroded head water tube), points, timing gear, oil pump, fuel pump.
-- [owner-reports.md](s21-engine/owner-reports.md): 73 owner cases by symptom (ignition and timing, cooling, fuel supply, head gasket, oil pressure, noises, LPG), with "Patterns" and "Lessons owners repeat".
-- [gaz69-swap.md](s21-engine/gaz69-swap.md): firewall clearance, mounts, bellhousing.
-- [gaz69-s21-owner-reports.md](s21-engine/gaz69-s21-owner-reports.md): two GAZ-69s with S-21 swaps followed over 2–4 years (drive2.ru logbooks). Covers the water pump and crank pulley, throttle linkage, air filter, exhaust, breather, electrics and military conversions, and ends with a swap checklist.
-- [ignition-and-mods.md](s21-engine/ignition-and-mods.md): electronic ignition options.
-- [parts-sources.md](s21-engine/parts-sources.md), [videos.md](s21-engine/videos.md), [sources.md](s21-engine/sources.md).
-- `images/`: head bolt order, valve adjustment, TDC mark, points gap, fuel and oil pumps, GAZ-69 swap photos (`images.md` lists the sources).
+- [common-problems.md](s21-engine/common-problems.md) and [owner-reports.md](s21-engine/owner-reports.md): 73 owner cases by symptom, with "Patterns" and "Lessons owners repeat". [owner-reports-2.md](s21-engine/owner-reports-2.md) adds 11 more, mostly electrics and fuel.
+- [gaz69-swap.md](s21-engine/gaz69-swap.md) and [gaz69-s21-owner-reports.md](s21-engine/gaz69-s21-owner-reports.md): two S-21 GAZ-69s followed over 2–4 years, with a swap checklist.
+- [ignition-and-mods.md](s21-engine/ignition-and-mods.md), [parts-sources.md](s21-engine/parts-sources.md), [videos.md](s21-engine/videos.md), and the `sources*.md` files.
+- `images/`: head bolt order, valve adjustment, TDC mark, pumps, owner photos, GAZ-69 swap photos.
+
+### `weber-34s2b1/`: the older carburettor, for reference only
+The older 34S2B1 (Nysa 1977, Żuk 1985) has no solenoid, 34/34 bores, a 5–5.5 mm float level and main jets 120/150. Its files are kept because some owner cases and factory pages overlap.
 
 ## Notes
 
 - **Polish originals:** the files carry short original-Polish quotes next to the English. Full source page texts were saved outside this repo for personal reference.
-- **Images:** factory manual pages come from scans on archive.org. Forum and shop photos belong to their authors and are credited in the images lists; they are here for personal reference only.
-- **Gaps:** no factory data for the 34S2A1/A2 or the 34S2C, and no factory idle CO. No S-21 head bolt torque online. No video specifically on the 34S2B1.
+- **Images:** factory pages come from archive.org scans. Forum and shop photos belong to their authors and are credited in the images lists; they are here for personal reference only.
+- **Gaps:**
+  - no factory CO value, and no factory starting turns for the mixture screw;
+  - the S2B1 economiser layout is not described anywhere;
+  - elektroda.pl was unreachable;
+  - no video shows a 28/35 strip-down.

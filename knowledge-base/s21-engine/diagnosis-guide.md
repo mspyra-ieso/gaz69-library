@@ -1,5 +1,7 @@
 # S-21: No-Start / Rough-Running Diagnosis Order
 
+> **Factory values** (timing 8° ± 1° BTDC on 85/86-octane fuel, dwell 65° ± 4°, valve clearances 0.20–0.22 / 0.30–0.32 mm cold, compression 10–11 kG/cm² new, limit 9) are in [factory-service-data.md](factory-service-data.md). They replace the club and forum figures quoted below.
+
 This order is built from owners' tips; the sources are linked at each step. Work through it in sequence and don't skip ahead to the carb. Several owners swapped carbs or whole engines over what was really an ignition fault. For example, one forum member advised against an engine swap "over a no-spark problem" (https://zlombol.pl/community/technikalia-2/zuk-silnik-s-21-nie-pali-na-jeden-gar-2/).
 
 ## 0. Basics (5 min)

@@ -1,5 +1,7 @@
 # Checklist: "It ran before, someone cleaned the carburettor, now it won't run"
 
+> **Reference only.** This file is about the older **34S2B1**. For the owner's **Weber 28/35**, use [../weber-28-35/](../weber-28-35/after-cleaning-checklist.md).
+
 Situation: the engine is an S-21 with a Polmo Weber 34S2B1, fitted to a GAZ-69. The engine ran before the carburettor was cleaned. Afterwards it won't start or won't keep running.
 
 > **Check which carburettor you have first** (see `../README.md`, "Identify your carburettor"). Most forum tips below come from owners of the later **28/35 S2A / S2B1**. Per the factory manuals, the **34S2B1** differs in three ways that change these checks:
